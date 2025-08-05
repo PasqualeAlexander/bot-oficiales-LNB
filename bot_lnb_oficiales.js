@@ -3403,7 +3403,7 @@ function procesarComando(jugador, mensaje) {
                 
                 // Detectar automáticamente el equipo del jugador
                 const equipoTexto = jugador.team === 1 ? "red" : "blue";
-                const codigoCamiseta = args[1];
+                const codigoCamiseta = args[1].toLowerCase(); // Hacer insensible a mayúsculas
                 
                 asignarColor(equipoTexto, codigoCamiseta, jugador);
             } else {
@@ -3602,25 +3602,10 @@ let ultimosComandosColors = {
 // Función para mostrar códigos de colores disponibles
 function mostrarColores(jugador) {
     const colores = [
-        "🎨 CAMISETAS ESPECIALES:",
-        "tbl - Camiseta TBL",
-        "hyz - Camiseta HYZ gris",
-        "hyz2 - Camiseta HYZ colorida",
-        "fnv - Camiseta FNV naranja",
-        "fnv2 - Camiseta FNV azul",
-        "avh - Camiseta AVH amarilla",
-        "avh2 - Camiseta AVH gris",
-        "avh3 - Camiseta AVH morada",
-        "lmdt - Camiseta LMDT dorada",
-        "lmdt2 - Camiseta LMDT invertida",
-        "dd - Camiseta Deportivo Defensa",
-        "dd2 - Camiseta Deportivo Defensa suplente",
-        "adb - Camiseta amigos de bashar",
-        "adb2 - Camiseta ADB roja",
-        "adb3 - Camiseta ADB colorida",
-        "do - Camiseta DO oscura",
-        "do1 - Camiseta DO blanca",
-        "do2 - Camiseta DO gris"
+        "🎨 Camisetas especiales:",
+        "tbl, hyz, hyz2, fnv, fnv2, avh, avh2, avh3,",
+        "lmdt, lmdt2, dd, dd2, adb, adb2, adb3, do, do1, do2",
+        "🧢 Usá !camis [código] para equiparte."
     ];
     
     colores.forEach(color => {
