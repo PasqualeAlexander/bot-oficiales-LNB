@@ -3766,10 +3766,22 @@ function asignarColor(equipo, codigo, jugador) {
             colors: ["FFFFFF", "8A2222", "FCFCFC"]
         },
         
-        do2: {
+        do2: { 
+            angle: 90, 
+            textColor: "F5F5F5", 
+            colors: ["4A2626", "000000", "4A2626"] 
+        },
+
+        pfc: {
             angle: 90,
-            textColor: "F5F5F5",
-            colors: ["4A2626", "000000", "4A2626"]
+            textColor: "000000",
+            colors: ["FF90DA", "FF88DA", "FF80DA"]
+        },
+
+        pfc2: {
+            angle: 120,
+            textColor: "F954FF",
+            colors: ["3D3D3D", "383838", "2E2E2E"]
         }
     };
     
@@ -6081,6 +6093,33 @@ function intercambiarEquiposConCamisetas() {
                 setTimeout(() => {
                     room.setPlayerTeam(0, equipoOriginalBot);
                     console.log('🤖 Bot devuelto a su posición original.');
+                    
+                    // *** SOLUCIÓN AL BUG DEL SEGUNDO !SWAP ***
+                    // Actualizar las variables globales para reflejar el intercambio realizado
+                    if (coloresPersonalizados.rojo && coloresPersonalizados.azul) {
+                        // Intercambiar en coloresPersonalizados
+                        const tempRojo = coloresPersonalizados.rojo;
+                        coloresPersonalizados.rojo = coloresPersonalizados.azul;
+                        coloresPersonalizados.azul = tempRojo;
+                        console.log('🔄 Variables coloresPersonalizados actualizadas tras intercambio');
+                    }
+                    
+                    if (coloresAntesDeLSwap.rojo && coloresAntesDeLSwap.azul) {
+                        // Intercambiar en coloresAntesDeLSwap
+                        const tempRojo = coloresAntesDeLSwap.rojo;
+                        coloresAntesDeLSwap.rojo = coloresAntesDeLSwap.azul;
+                        coloresAntesDeLSwap.azul = tempRojo;
+                        console.log('🔄 Variables coloresAntesDeLSwap actualizadas tras intercambio');
+                    }
+                    
+                    // También actualizar camisetasDefinidas si están definidas
+                    if (camisetasDefinidas.rojo && camisetasDefinidas.azul) {
+                        const tempRojo = camisetasDefinidas.rojo;
+                        camisetasDefinidas.rojo = camisetasDefinidas.azul;
+                        camisetasDefinidas.azul = tempRojo;
+                        console.log('🔄 Variables camisetasDefinidas actualizadas tras intercambio');
+                    }
+                    
                     anunciarExito("✅ ¡Intercambio de equipos y camisetas completado!");
                     if (nombresIntercambiados) {
                        anunciarOficial(`🏷️ Equipos: 🔴 ${nombreEquipoRojo} vs ${nombreEquipoAzul} 🔵`);
