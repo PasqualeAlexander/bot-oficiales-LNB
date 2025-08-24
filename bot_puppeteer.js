@@ -8,7 +8,7 @@ class HaxballBot {
         this.isConnected = false;
         this.config = {
             roomName: "🏆🔹LNB | OFICIAL | HOST AMIS/OFIS🔹🏆",
-            roomPassword: LNB2025,
+            roomPassword: "LNB2025",
             maxPlayers: 28,
             roomPublic: true,
             token: "thr1.AAAAAGirIRmvCF0TOwz3rA.jI-sihugSuc",
