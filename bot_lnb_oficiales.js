@@ -14,8 +14,8 @@
 // ═══════════════════════════════════════════════════════════════════════════════
 
 
-const roomName = "🏆🔹LNB OFICIAL - HOST AMIS/OFIS🔹🏆"; // CAMBIAR DD Y ??? POR LOS TEAMS
-const roomPassword = null; // 
+const roomName = "🏆🔹LNB | OFICIAL | HOST AMIS/OFIS🔹🏆"; // CAMBIAR DD Y ??? POR LOS TEAMS
+const roomPassword = LNB2025; // 
 const maxPlayers = 28; // REEMPLAZAR 28 POR LA CANTIDAD MAXIMA DE JUGADORES DESEADA
 const roomPublic = true; // Privada para control en competencias (nadie que no tenga el link puede entrar)
 const token = "thr1.AAAAAGirIRmvCF0TOwz3rA.jI-sihugSuc";
