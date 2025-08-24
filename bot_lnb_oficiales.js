@@ -18,7 +18,7 @@ const roomName = "🏆🔹LNB | OFICIAL | HOST AMIS/OFIS🔹🏆"; // CAMBIAR DD
 const roomPassword = "LNB2025"; // 
 const maxPlayers = 28; // REEMPLAZAR 28 POR LA CANTIDAD MAXIMA DE JUGADORES DESEADA
 const roomPublic = true; // Privada para control en competencias (nadie que no tenga el link puede entrar)
-const token = "thr1.AAAAAGirIRmvCF0TOwz3rA.jI-sihugSuc";
+const token = "thr1.AAAAAGirYWqdkI8cxNX7Pg.jr6tfDSj5X8";
 const geo = { code: 'AR', lat: -34.7000, lon: -58.2800 }; // Buenos Aires, Argentina
 
 // Variables para detección de cierre abrupto
