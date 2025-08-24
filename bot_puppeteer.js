@@ -7,7 +7,7 @@ class HaxballBot {
         this.page = null;
         this.isConnected = false;
         this.config = {
-            roomName: "🏆 LNB OFICIAL - DD VS ??? 🏆",
+            roomName: "🏆🔹LNB OFICIAL - HOST AMIS/OFIS🔹🏆",
             roomPassword: null,
             maxPlayers: 28,
             roomPublic: true,
