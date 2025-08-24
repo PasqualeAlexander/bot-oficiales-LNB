@@ -14,7 +14,7 @@
 // ═══════════════════════════════════════════════════════════════════════════════
 
 
-const roomName = "🏆 LNB OFICIAL - DD VS ??? 🏆"; // CAMBIAR DD Y ??? POR LOS TEAMS
+const roomName = "🏆🔹LNB OFICIAL - HOST AMIS/OFIS🔹🏆"; // CAMBIAR DD Y ??? POR LOS TEAMS
 const roomPassword = null; // 
 const maxPlayers = 28; // REEMPLAZAR 28 POR LA CANTIDAD MAXIMA DE JUGADORES DESEADA
 const roomPublic = true; // Privada para control en competencias (nadie que no tenga el link puede entrar)
