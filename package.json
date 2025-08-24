@@ -1,0 +1,30 @@
+{
+  "name": "bot-oficiales-lnb",
+  "version": "1.0.0",
+  "description": "Bot oficial LNB para partidos de competencia ejecutado con Puppeteer",
+  "main": "bot_puppeteer.js",
+  "scripts": {
+    "start": "node bot_puppeteer.js",
+    "dev": "nodemon bot_puppeteer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": [
+    "haxball",
+    "bot",
+    "lnb",
+    "puppeteer",
+    "oficiales"
+  ],
+  "author": "IFT",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PasqualeAlexander/bot-oficiales-LNB.git"
+  }
+}
