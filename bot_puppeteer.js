@@ -11,7 +11,7 @@ class HaxballBot {
             roomPassword: "LNB2025",
             maxPlayers: 28,
             roomPublic: true,
-            token: "thr1.AAAAAGis6p1SfBERKOYa0w.eyb72zAAEkA",
+            token: "thr1.AAAAAGivxSg6LblxVjrbUw.AzQdt8PuB20",
             geo: { code: 'AR', lat: -34.7000, lon: -58.2800 }
         };
     }
