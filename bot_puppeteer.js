@@ -21,7 +21,7 @@ class HaxballBot {
             console.log('🔄 Inicializando Puppeteer...');
             
             this.browser = await puppeteer.launch({
-                headless: true,
+                headless: "new",
                 args: [
                     '--no-sandbox', 
                     '--disable-setuid-sandbox',
@@ -29,8 +29,18 @@ class HaxballBot {
                     '--disable-accelerated-2d-canvas',
                     '--no-first-run',
                     '--no-zygote',
-                    '--disable-gpu'
-                ]
+                    '--disable-gpu',
+                    '--memory-pressure-off',
+                    '--no-default-browser-check',
+                    '--disable-web-security',
+                    '--disable-features=TranslateUI,VizDisplayCompositor',
+                    '--disable-extensions',
+                    '--disable-plugins',
+                    '--disable-background-timer-throttling',
+                    '--disable-renderer-backgrounding',
+                    '--disable-backgrounding-occluded-windows'
+                ],
+                timeout: 30000
             });
 
             this.page = await this.browser.newPage();
